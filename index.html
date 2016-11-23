@@ -13,7 +13,12 @@
       #messages li:nth-child(odd) { background: #eee; }
     </style>
   </head>
-  <script src="/socket.io/socket.io.js"></script>
+  <body>
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+      <script src="/socket.io/socket.io.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 <script>
 $(document).ready(function(){
@@ -29,10 +34,5 @@ $(document).ready(function(){
 
 });
   </script>
-  <body>
-    <ul id="messages"></ul>
-    <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
-    </form>
   </body>
 </html>
